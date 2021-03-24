@@ -1,5 +1,5 @@
 create table tipo_contrato(
-	id_contrato serial primary key,
+	id_tipo_contrato serial primary key,
 	nome varchar not null
 );
 
@@ -12,3 +12,7 @@ values('contratado');
 
 insert into tipo_contrato(nome) 
 values('tercerizado');
+
+select * from tipo_contrato ;
+
+alter table tipo_contrato rename column id_contrato to id_tipo_contrato;

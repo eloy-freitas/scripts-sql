@@ -22,5 +22,7 @@ values('avô');
 insert into relacao_parental(nome)
 values('avó');
 
+select * from relacao_parental ;
+
 
 

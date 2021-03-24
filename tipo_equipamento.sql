@@ -18,3 +18,5 @@ values('mousepad gaymer rgb gladiator', 'multilaser');
 
 insert into tipo_equipamento(nome, fabricante)
 values('headset gaymer rgb duvidoso', 'knup');
+
+select * from tipo_equipamento ;

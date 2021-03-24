@@ -7,8 +7,10 @@ create table departamento(
 
 drop table departamento ;
 
-insert into departamento(nome, 1)
+insert into departamento(nome, id_gestor)
 values('desenvolvimento', 1);
 
-insert into departamento(nome, 1)
-values('vendas', 4);
+insert into departamento(nome, id_gestor)
+values('vendas', 5);
+
+select * from departamento ;

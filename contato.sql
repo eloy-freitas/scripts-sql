@@ -14,3 +14,5 @@ values ('webadmin@gmail.com', '028981434275', '015376987957');
 
 insert into contato(email, celular, residencial)
 values ('jacs@hotmaiil.com', '028981434277', '015376987951');
+
+select * from contato;

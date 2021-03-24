@@ -3,8 +3,6 @@ create table tipo_pagamento(
 	nome varchar not null
 );
 
-/*criado*/
-
 insert into tipo_pagamento (nome)
 values ('credito');
 
