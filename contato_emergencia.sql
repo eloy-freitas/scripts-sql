@@ -6,13 +6,13 @@ create table contato_emergencia(
 );
 
 
-insert into contato_emergencia(nome, id_contato)
+insert into contato_emergencia(nm_contato, id_contato)
 values('cleida', 1);
-insert into contato_emergencia(nome, id_contato)
+insert into contato_emergencia(nm_contato, id_contato)
 values('robmilson', 2);
-insert into contato_emergencia(nome, id_contato)
+insert into contato_emergencia(nm_contato, id_contato)
 values('maricleia', 1);
-insert into contato_emergencia(nome, id_contato)
+insert into contato_emergencia(nm_contato, id_contato)
 values('chonsk', 3);
 
 select * from contato_emergencia ;
