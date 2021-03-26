@@ -17,6 +17,7 @@ services:
       - /etc/postgresql
       - /var/log/postgresql
       - ./postgres-data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     networks: 
       banco:
         ipv4_address: 192.168.1.2

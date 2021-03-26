@@ -1,21 +1,21 @@
-CREATE TABLE endereco(
-	ID_ENDERECO SERIAL PRIMARY KEY,
-	LOGRADOURO VARCHAR NOT NULL,
-	NUMERO INT NOT NULL,
-	BAIRO VARCHAR NOT NULL,
-	CIDADE VARCHAR NOT NULL,
-	CEP VARCHAR NOT NULL,
-	UL VARCHAR NOT NULL,
-	COMPLEMENTO VARCHAR NULL
+create table endereco(
+   id_endereco serial primary key,
+   nm_logradouro varchar not ncd_ufl,
+   cd_numero int not ncd_ufl,
+   nm_bairro varchar not ncd_ufl,
+   nm_cidade varchar not ncd_ufl,
+   cd_cep varchar not ncd_ufl,
+   cd_uf varchar not ncd_ufl,
+   txt_complemento varchar
 );
-
-INSERT INTO ENDERECO (LOGRADOURO,NUMERO ,BAIRO ,CIDADE, CEP, UL, COMPLEMENTO )
-VALUES ('RUA PADRE ANCHIETA',135, 'CENTRO', 'ALEGRE', 29500000, 'ES', 'EM CIMA DA CLINICA VIVARE');
-
-INSERT INTO ENDERECO (LOGRADOURO,NUMERO ,BAIRO ,CIDADE, CEP, UL, COMPLEMENTO )
-VALUES ('AV OLIVIO CORREA PEDROSA', 1000, 'CENTRO', 'ALEGRE', 29500000, 'ES', 'EM FRENTE AO SAAE');
-
-INSERT INTO ENDERECO (LOGRADOURO,NUMERO ,BAIRO ,CIDADE, CEP, UL, COMPLEMENTO )
-VALUES ('RUA VITÓRIO ALBANIS', 1000, 'CENTRO', 'ALEGRE', 29500000, 'ES', 'EM FRENTE AO SAAE');
-
+ 
+insert into endereco (nm_logradouro,cd_numero ,nm_bairro ,nm_cidade, cd_cep, cd_uf, txt_complemento )
+values ('rua padre anchieta',135, 'centro', 'alegre', 29500000, 'es', 'em cima da clinica vivare');
+insert into endereco (nm_logradouro,cd_numero ,nm_bairro ,nm_cidade, cd_cep, cd_uf, txt_complemento )
+values ('av olivio correa pedrosa', 1000, 'centro', 'alegre', 29500000, 'es', 'em frente ao saae');
+insert into endereco (nm_logradouro,cd_numero ,nm_bairro ,nm_cidade, cd_cep, cd_uf, txt_complemento )
+values ('rua vitório albanis', 1000, 'centro', 'alegre', 29500000, 'es', 'em frente ao saae');
+ 
 select * from endereco ;
+ 
+

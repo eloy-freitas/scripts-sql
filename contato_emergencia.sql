@@ -1,22 +1,18 @@
 create table contato_emergencia(
 	id_contato_emergencia serial primary key,
-	nome varchar not null,
-	id_contato_fk int not null,
-	foreign key (id_contato_fk) references contato(id_contato)
+	nm_contato varchar not null,
+	id_contato int not null,
+	foreign key (id_contato) references contato(id_contato)
 );
 
 
-insert into contato_emergencia(nome, id_contato_fk)
+insert into contato_emergencia(nome, id_contato)
 values('cleida', 1);
-
-insert into contato_emergencia(nome, id_contato_fk)
+insert into contato_emergencia(nome, id_contato)
 values('robmilson', 2);
-
-
-insert into contato_emergencia(nome, id_contato_fk)
+insert into contato_emergencia(nome, id_contato)
 values('maricleia', 1);
-
-insert into contato_emergencia(nome, id_contato_fk)
+insert into contato_emergencia(nome, id_contato)
 values('chonsk', 3);
 
 select * from contato_emergencia ;

@@ -1,22 +1,18 @@
 create table tipo_equipamento(
 	id_tipo_equipamento serial primary key,
-	nome varchar not null,
-	fabricante varchar not null
-
+	nm_equipamento varchar(250) not null,
+	nm_fabricante varchar(250) not null
 );
 
-/*criado*/
-
-insert into tipo_equipamento(nome, fabricante)
+insert into tipo_equipamento(nm_equipamento, nm_fabricante)
 values('teclado gaymer giganto', 'razer');
-
-insert into tipo_equipamento(nome, fabricante)
+insert into tipo_equipamento(nm_equipamento, nm_fabricante)
 values('mouse gaymer laizer', 'razer');
-
-insert into tipo_equipamento(nome, fabricante)
+insert into tipo_equipamento(nm_equipamento, nm_fabricante)
 values('mousepad gaymer rgb gladiator', 'multilaser');
-
-insert into tipo_equipamento(nome, fabricante)
+insert into tipo_equipamento(nm_equipamento, nm_fabricante)
 values('headset gaymer rgb duvidoso', 'knup');
 
 select * from tipo_equipamento ;
+
+
