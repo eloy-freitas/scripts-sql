@@ -1,6 +1,6 @@
 create table dados_bancarios(
 	id_dados_bancarios serial primary key,
-	id_colaborador_fk int not null,
+	id_colaborador_fk int not null,-- n precisa do fk no nome da col
 	banco varchar not null,
 	agencia varchar not null,
 	conta varchar not null,

@@ -1,6 +1,6 @@
 create table colaborador_equipamento(
 	id_colaborador_equipamento serial primary key,
-	id_colaborador_fk int not null,
+	id_colaborador_fk int not null,--n precisa colocar fk no nome da coluna
 	numeracao_fk int not null,
 	data_atribuicao date not null,
 	foreign key (id_colaborador_fk) references colaborador(id_colaborador),

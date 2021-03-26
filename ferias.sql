@@ -5,6 +5,8 @@ create table ferias(
 	data_inicio date not null,
 	data_fim date not null,
 	qtd_dias_abono int not null,
+	--faltou flag
+	--faltou eu falar pra colocar qual o colaborador
 	justificativa varchar null
 );
 

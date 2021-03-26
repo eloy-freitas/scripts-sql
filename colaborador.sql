@@ -11,10 +11,10 @@ create table colaborador(
 	nome_mae varchar not null,
 	nome_pai varchar not null,
 	data_admissao date not null,
-	cargo varchar not null,
+	cargo varchar not null,--outra tabela
 	salario float not null,
 	id_tipo_contrato_fk int not null,
-	vale_transporte float null,
+	vale_transporte float null,--boolean
 	id_tipo_ticket_fk int not null,
 	foreign key (id_tipo_ticket_fk) references tipo_ticket(id_tipo_ticket),
 	foreign key (id_tipo_contrato_fk) references tipo_contrato(id_tipo_contrato)

@@ -1,6 +1,6 @@
 create table departamento_colaborador(
 	id_departamento_colaborador serial primary key,
-	id_colaborador_fk int not null,
+	id_colaborador_fk int not null,--n precisa fk no nome da col
 	id_departamento_fk int not null,
 	foreign key (id_colaborador_fk) references colaborador(id_colaborador),
 	foreign key (id_departamento_fk) references departamento(id_departamento)
