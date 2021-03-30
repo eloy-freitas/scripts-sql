@@ -1,13 +1,12 @@
 create table ferias(
 	id_ferias serial primary key,
-	dt_solicitacao date not null,
-	dt_aprovacao date,
 	dt_inicio date not null,
 	dt_fim date,
 	vl_qtd_dias_abono int,
 	txt_justificativa varchar null
+	--faltou flag
+	--faltou eu falar pra colocar qual o colaborador
 );
-
 insert into ferias(dt_solicitacao, dt_aprovacao, dt_inicio,
 dt_fim, vl_qtd_dias_abono, txt_justificativa)
 values(current_date, current_date, current_date, current_date,
